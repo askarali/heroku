@@ -41,7 +41,7 @@ if (intercept('POST')) {
     $response = doRequest($gatewayUrl . '/3DSecureId/' . $threeDSecureId, 'POST', json_encode($data), $headers);
 
     // build mobile redirect
-   // doRedirect("gatewaysdk://3dsecure?acsResult=" . urlencode($response));
+    doRedirect("testgatewaysdk://3dsecure?acsResult=" . urlencode($response));
 }
 
 ?>
