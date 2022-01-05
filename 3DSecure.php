@@ -23,7 +23,6 @@ if (intercept('PUT')) {
     // build path
     $threeDSId = requiredQueryParam('3DSecureId');
     $path = '/3DSecureId/' . $threeDSId;
-
     proxyCall($path);
 }
 
